@@ -9,7 +9,7 @@ import java.util.Date;
  indicates no real hire date specified yet.
 */
 public class HourlyEmployee extends Employee
-                            implements Cloneable
+                            implements Cloneable, Comparable<HourlyEmployee>
 {
     private double wageRate;
     private double hours; //for the month
@@ -119,5 +119,9 @@ public class HourlyEmployee extends Employee
         return copy;
     }
 
+    public int compareTo(HourlyEmployee anotherWorker) {
+    	return this.getName().compareTo(anotherWorker.getName());
+    }
+    
 }
 
