@@ -41,24 +41,24 @@ public class Lab4 {
         	System.out.println(temp.toString());
         }
         
-//        // Part 3
-//        for(PayAble temp : (PayAble[])bills){
-//        	temp.printPayment();
-//        }
-//        
-//        // Part 4
-//        PayAble[] pending = new PayAble[10];
-//        
-//        for(int i = 0; i < 5; i++){
-//        	pending[i] = (PayAble)bills[i];
-//        }
-//        
-//        for(int i = 0; i < 5; i++){
-//        	pending[i+5] = (PayAble)staff[i];
-//        }
-//        
-//        for(PayAble temp : pending){
-//        	temp.printPayment();
-//        }
-//    }
-}}
+        // Part 3
+        for(PayAble temp : (PayAble[])bills){
+        	temp.printPayment();
+        }
+        
+        // Part 4
+        PayAble[] pending = new PayAble[10];
+        
+        for(int i = 0; i < 5; i++){
+        	pending[i] = (PayAble)bills[i];
+        }
+        
+        for(int i = 0; i < 5; i++){
+        	pending[i+5] = (PayAble)staff[i];
+        }
+        
+        for(PayAble temp : pending){
+        	temp.printPayment();
+        }
+    }
+}

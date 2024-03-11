@@ -1,6 +1,6 @@
 package lab4package;
 
-public class Invoice implements Comparable<Invoice>{
+public class Invoice implements Comparable<Invoice>, PayAble{
 	
 	private String companyName;
 	private Double amount;
@@ -61,6 +61,17 @@ public class Invoice implements Comparable<Invoice>{
 	    } else {
 	        return 0;
 	    }
+	}
+
+	@Override
+	public Double amountToPay() {
+		return this.getAmount();
+	}
+
+	@Override
+	public void printPayment() {
+		System.out.println("Payment information for an invoice. Company Name: " + this.getName() + "; payment " + this.amountToPay() + ".");
+		
 	}
 }
 
