@@ -1,6 +1,6 @@
 package lab4package;
 
-public class Invoice{
+public class Invoice implements Comparable<Invoice>{
 	
 	private String companyName;
 	private Double amount;
@@ -53,6 +53,14 @@ public class Invoice{
 		return companyName + " is owed " + amount;
 	}
 	
-
+	public int compareTo(Invoice bill) {
+	    if (this.amount < bill.getAmount()) {
+	        return -1;
+	    } else if (this.amount > bill.getAmount()) {
+	        return 1;
+	    } else {
+	        return 0;
+	    }
+	}
 }
 

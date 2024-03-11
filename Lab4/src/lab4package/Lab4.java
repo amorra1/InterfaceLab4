@@ -25,22 +25,22 @@ public class Lab4 {
         	System.out.println(temp.toString());
         }
         
-//        // Part 2
-//        Invoice[] bills = new Invoice[5];
-//        for(int i = 0; i < 5; i++){
-//        	bills[i] = new Invoice("Company" + (5-i), 300.0 - 50.0*i);
-//        }
-//        
-//        for(Invoice temp : bills){
-//        	System.out.println(temp.toString());
-//        }
-//        
-//        Arrays.sort(bills);
-//        
-//        for(Invoice temp : bills){
-//        	System.out.println(temp.toString());
-//        }
-//        
+        // Part 2
+        Invoice[] bills = new Invoice[5];
+        for(int i = 0; i < 5; i++){
+        	bills[i] = new Invoice("Company" + (5-i), 300.0 - 50.0*i);
+        }
+        
+        for(Invoice temp : bills){
+        	System.out.println(temp.toString());
+        }
+        
+        Arrays.sort(bills);
+        
+        for(Invoice temp : bills){
+        	System.out.println(temp.toString());
+        }
+        
 //        // Part 3
 //        for(PayAble temp : (PayAble[])bills){
 //        	temp.printPayment();
